@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SandiRath Diary</title>
+  <meta name="description" content="SandiRath Diary - a fun and clean personal blog." />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #000000 85%, #1f3b1f);
+      color: #ccffcc;
+    }
+    header {
+      background: linear-gradient(to right, #000000 85%, #1a3e1a);
+      padding: 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #33cc66;
+      transition: color 1s ease-in-out;
+      animation: fadeInTitle 2.5s ease-in-out forwards;
+    }
+    @keyframes fadeInTitle {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #99ff99;
+    }
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    article {
+      background: #1a331a;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    }
+    article h2, article h3 {
+      color: #b6ffb6;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #0d1b0d;
+      color: #88cc88;
+      margin-top: 3rem;
+    }
+    a {
+      color: #66ff99;
+    }
+
+    /* Leaf Animation */
+    .leaf-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/6/6a/Leaf_icon.svg') center center no-repeat;
+      background-size: 100px 100px;
+      background-color: #0d1b0d;
+      z-index: 9999;
+      animation: fadeOutLeaf 2.5s ease-in-out forwards;
+    }
+
+    @keyframes fadeOutLeaf {
+      0% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+      }
+      100% {
+        opacity: 0;
+        transform: scale(5) rotate(360deg);
+        visibility: hidden;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="leaf-overlay"></div>
+  <header>
+    <h1>SandiRath Diary</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#blog">Blog</a>
+      <a href="#about">About Me</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2>Welcome to SandiRath Diary</h2>
+      <p>This is my personal space on the web — a fun and clean blog where I write, reflect, and share thoughts and stories from everyday life.</p>
+    </section>
+
+    <section id="blog">
+      <h2>Latest Post</h2>
+      <article>
+        <h3>Finding Peace in the Little Things</h3>
+        <p><em>Posted on June 2, 2025</em></p>
+        <p>Sometimes, all it takes is a quiet walk, a cup of tea, or the sound of rain to remind us that happiness isn’t far away...</p>
+      </article>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hi! I’m SandiRath. This blog is a digital diary where I capture my thoughts, stories, and lessons from life’s journey. Thanks for visiting!</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Feel free to reach out to me at: <a href="mailto:you@example.com">you@example.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SandiRath Diary. All rights reserved.</p>
+  </footer>
+</body>
+</html>
